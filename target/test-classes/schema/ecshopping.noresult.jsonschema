@@ -1,0 +1,45 @@
+{
+    "type":"object",
+        "required":true,
+        "properties":{
+            "query": {
+                "type":"object",
+                "required":true,
+                "properties":{
+                    "count": {
+                        "type":"number",
+                        "required":true
+                    },
+                    "created": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "lang": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "results": {
+                        "type":"object",
+                        "required":true,
+                        "properties":{
+                            "Response": {
+                                "type":"object",
+                                "required":true,
+                                "properties":{
+                                    "Result": {
+                                        "type":"null",
+                                        "required":true
+                                    },
+                                    "Status": {
+                                        "type":"string",
+                                        "required":true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+

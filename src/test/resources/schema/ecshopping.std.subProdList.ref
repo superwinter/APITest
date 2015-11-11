@@ -1,0 +1,20 @@
+{
+    "type":"object",
+    "properties":{
+        "max":{
+            "type":"number",
+            "required":true
+        },
+        "min":{
+            "type":"number",
+            "required":true
+        },
+        "subProduct":{
+            "type":"array",
+            "required":false,
+            "items": {
+                "$ref":"file:./src/test/resources/schema/ecshopping.std.subProd.ref"
+            }
+        }
+    }
+}

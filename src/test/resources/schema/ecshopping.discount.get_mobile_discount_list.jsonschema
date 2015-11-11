@@ -1,0 +1,101 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+        "query" :{
+            "type":"object",
+            "required":false,
+            "properties":{
+                "results": {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "Response": {
+                            "type":"object",
+                            "required":true,
+                            "properties":{
+                                "Result": {
+                                    "type":"object",
+                                    "required":true,
+                                    "properties":{
+                                        "rss": {
+                                            "type":"object",
+                                            "required":true,
+                                            "properties":{
+                                                "channel": {
+                                                    "type":"object",
+                                                    "required":true,
+                                                    "properties":{
+                                                        "item": {
+                                                            "type":"array",
+                                                            "minitems": "1",
+                                                            "required":true,
+                                                            "items":
+                                                            {
+                                                                "type":"object",
+                                                                "required":true,
+                                                                "properties":{
+                                                                    "content": {
+                                                                        "type":"object",
+                                                                        "required":true,
+                                                                        "properties":{
+                                                                            "height": {
+                                                                                "type":"string",
+                                                                                "required":true
+                                                                            },
+                                                                            "url": {
+                                                                                "type":"string",
+                                                                                "required":true
+                                                                            },
+                                                                            "width": {
+                                                                                "type":"string",
+                                                                                "required":true
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "description": {
+                                                                        "type":"string",
+                                                                        "required":true
+                                                                    },
+                                                                    "expiration": {
+                                                                        "type":"string",
+                                                                        "required":false
+                                                                    },
+                                                                    "link": {
+                                                                        "type":"string",
+                                                                        "required":true
+                                                                    },
+                                                                    "price": {
+                                                                        "type":"string",
+                                                                        "required":true
+                                                                    },
+                                                                    "short-description": {
+                                                                        "type":"string",
+                                                                        "required":true
+                                                                    },
+                                                                    "title": {
+                                                                        "type":"string",
+                                                                        "required":true
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Status": {
+                                    "type":"string",
+                                    "required":true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+     }       
+}

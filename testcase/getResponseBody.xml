@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcases>
+  <testcase tcid="1">
+    <method>GET</method>
+    <url><![CDATA[https://tw.yahoo.com/]]></url>
+    <sendRequest />
+    <dumpResponseBody />
+  </testcase>
+</testcases>

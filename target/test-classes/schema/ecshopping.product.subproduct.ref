@@ -1,0 +1,62 @@
+{
+    "type":"object",
+     "required":true,
+     "properties":{
+            "id": {
+                "type":"number",
+                "required":true
+            },
+            "name": {
+                "type":"string",
+                "required":true
+            },
+            "purchase_limit": {
+                "type":"number",
+                "required":true
+            },
+            "price": {
+                "type":"number",
+                "required":false
+            },
+            "rating": {
+                "type":"number",
+                "required":false
+            },
+            "spec_name": {
+                "type":"string",
+                "required":false
+            },
+            "sepc_list":{
+                "type":"array",
+                "required":false,
+                "items":
+                {
+                    "$ref":"file:./src/test/resources/schema/ecshopping.product.subproduct.ref"
+                }
+            },
+            "images": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "img_1000": {
+                            "type":"string",
+                            "required":true
+                        },
+                        "img_80": {
+                            "type":"string",
+                            "required":true
+                        },
+                        "img_400": {
+                            "type":"string",
+                            "required":true
+                        }
+                    }
+                }
+            }
+        }
+}
+

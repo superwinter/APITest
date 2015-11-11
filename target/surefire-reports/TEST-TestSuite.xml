@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="4.128" errors="0" skipped="0" tests="1" name="TestSuite">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="env.LESSOPEN" value="|/usr/bin/lesspipe.sh %s"/>
+    <property name="localRepository" value="/home/y/tmp/m2-repository"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="env.TERMCAP" value="SC|screen|VT 100/ANSI X3.64 virtual terminal:\
+	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\
+	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\
+	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\
+	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\
+	:li#59:co#236:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\
+	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\
+	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\
+	:ke=\E[?1l\E&gt;:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\
+	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\
+	:se=\E[23m:mb=\E[5m:md=\E[1m:mr=\E[7m:me=\E[m:ms:\
+	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\
+	:vb=\Eg:G0:as=\E(0:ae=\E(B:\
+	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\
+	:po=\E[5i:pf=\E[4i:k0=\E[10~:k1=\EOP:k2=\EOQ:k3=\EOR:\
+	:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:k8=\E[19~:\
+	:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:F3=\E[1;2P:\
+	:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:F7=\E[15;2~:\
+	:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:kb=:K2=\EOE:\
+	:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:*7=\E[1;2F:\
+	:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:%e=\E[5;2~:\
+	:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:@7=\E[4~:\
+	:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:kd=\EOB:\
+	:kr=\EOC:kl=\EOD:km:"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.boot.class.path" value="/home/y/libexec64/jdk1.7.0/jre/lib/resources.jar:/home/y/libexec64/jdk1.7.0/jre/lib/rt.jar:/home/y/libexec64/jdk1.7.0/jre/lib/sunrsasign.jar:/home/y/libexec64/jdk1.7.0/jre/lib/jsse.jar:/home/y/libexec64/jdk1.7.0/jre/lib/jce.jar:/home/y/libexec64/jdk1.7.0/jre/lib/charsets.jar:/home/y/libexec64/jdk1.7.0/jre/lib/jfr.jar:/home/y/libexec64/jdk1.7.0/jre/classes"/>
+    <property name="env.PWD" value="/home/winterya/edward/commonTest"/>
+    <property name="env.LANG" value="en_US.UTF-8"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="1.7.0_45-b18"/>
+    <property name="env.HISTSIZE" value="1000"/>
+    <property name="user.name" value="winterya"/>
+    <property name="maven.build.version" value="Apache Maven 3.0.5 (r01de14724cdef164cd33c7c8c2fe155faf9602da; 2013-02-19 21:51:28+0800)"/>
+    <property name="env.USER" value="winterya"/>
+    <property name="log4j.configuration" value="file:conf/log4j.properties"/>
+    <property name="env.HISTCONTROL" value="ignoredups"/>
+    <property name="env.SHELL" value="/bin/bash"/>
+    <property name="env.SVNROOT" value="svn+ssh://svn.corp.yahoo.com/yahoo/mail"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="env.QTLIB" value="/usr/lib64/qt-3.3/lib"/>
+    <property name="env.SSH_TTY" value="/dev/pts/1"/>
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat"/>
+    <property name="env.PATH" value="/home/y/bin64:/home/y/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/winterya/bin"/>
+    <property name="user.language" value="en"/>
+    <property name="env.WINDOW" value="0"/>
+    <property name="sun.boot.library.path" value="/home/y/libexec64/jdk1.7.0/jre/lib/amd64"/>
+    <property name="classworlds.conf" value="/home/y/libexec/maven/bin/m2.conf"/>
+    <property name="env.SSH_CONNECTION" value="10.82.153.100 56201 10.82.46.103 22"/>
+    <property name="java.version" value="1.7.0_45"/>
+    <property name="env.SSH_CLIENT" value="10.82.153.100 56201 22"/>
+    <property name="user.timezone" value=""/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.endorsed.dirs" value="/home/y/libexec64/jdk1.7.0/jre/lib/endorsed"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="env.SHLVL" value="2"/>
+    <property name="env.HOSTNAME" value="a-yql1.m.ect.corp.tw1.yahoo.com"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="env.STY" value="11863.pts-1.a-yql1"/>
+    <property name="env.QTDIR" value="/usr/lib64/qt-3.3"/>
+    <property name="env.JAVACMD" value="/home/y/bin/java"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="user.country" value="US"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.home" value="/home/y/libexec64/jdk1.7.0/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="env.LOGNAME" value="winterya"/>
+    <property name="os.version" value="2.6.32-431.11.2.el6.YAHOO.20140407.x86_64"/>
+    <property name="env.G_BROKEN_FILENAMES" value="1"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="24.45-b08"/>
+    <property name="env.QTINC" value="/usr/lib64/qt-3.3/include"/>
+    <property name="env.JAVA_HOME" value="/home/y/share/yjava_jdk/java"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="env.TERM" value="screen"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="testcase" value="testcase/getResponseBody.xml"/>
+    <property name="env.LSCOLORS" value="gxBxhxDxfxhxhxhxhxcxcx"/>
+    <property name="user.home" value="/home/winterya"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="env.M2_HOME" value="/home/y/libexec/maven"/>
+    <property name="java.library.path" value="/home/y/lib64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="env.SVN_EDITOR" value=""/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="/home/y/libexec/maven"/>
+    <property name="java.class.path" value="/home/y/libexec/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtestcase=testcase/getResponseBody.xml clean test"/>
+    <property name="maven.version" value="3.0.5"/>
+    <property name="env.CVS_RSH" value="ssh"/>
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="env.HOME" value="/home/winterya"/>
+    <property name="surefire.test.class.path" value="/home/winterya/edward/commonTest/target/test-classes:/home/winterya/edward/commonTest/target/classes:/home/y/tmp/m2-repository/yahoo/yinst/CommonTest/CommonTest/1.0.16.8110/CommonTest-1.0.16.8110.jar:/home/y/tmp/m2-repository/org/kitchen-eel/json-schema-validator/1.4.2/json-schema-validator-1.4.2.jar:/home/y/tmp/m2-repository/com/fasterxml/jackson/core/jackson-databind/2.1.1/jackson-databind-2.1.1.jar:/home/y/tmp/m2-repository/com/fasterxml/jackson/core/jackson-annotations/2.1.1/jackson-annotations-2.1.1.jar:/home/y/tmp/m2-repository/com/fasterxml/jackson/core/jackson-core/2.1.1/jackson-core-2.1.1.jar:/home/y/tmp/m2-repository/org/mozilla/rhino/1.7R4/rhino-1.7R4.jar:/home/y/tmp/m2-repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/home/y/tmp/m2-repository/joda-time/joda-time/2.1/joda-time-2.1.jar:/home/y/tmp/m2-repository/com/google/guava/guava/13.0.1/guava-13.0.1.jar:/home/y/tmp/m2-repository/com/googlecode/libphonenumber/libphonenumber/5.2/libphonenumber-5.2.jar:/home/y/tmp/m2-repository/com/jayway/jsonpath/json-path/0.5.3/json-path-0.5.3.jar:/home/y/tmp/m2-repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/home/y/tmp/m2-repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar:/home/y/tmp/m2-repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/y/tmp/m2-repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/y/tmp/m2-repository/jaxen/jaxen/1.1.1/jaxen-1.1.1.jar:/home/y/tmp/m2-repository/jdom/jdom/1.0/jdom-1.0.jar:/home/y/tmp/m2-repository/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar:/home/y/tmp/m2-repository/xom/xom/1.0/xom-1.0.jar:/home/y/tmp/m2-repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar:/home/y/tmp/m2-repository/xalan/xalan/2.6.0/xalan-2.6.0.jar:/home/y/tmp/m2-repository/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar:/home/y/tmp/m2-repository/org/testng/testng/5.14/testng-5.14.jar:/home/y/tmp/m2-repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/home/y/tmp/m2-repository/com/google/inject/guice/2.0/guice-2.0.jar:/home/y/tmp/m2-repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/y/tmp/m2-repository/com/beust/jcommander/1.5/jcommander-1.5.jar:/home/y/tmp/m2-repository/org/uncommons/reportng/1.1.2/reportng-1.1.2.jar:/home/y/tmp/m2-repository/org/testng/testng/5.0/testng-5.0-jdk15.jar:/home/y/tmp/m2-repository/ant/ant/1.6.5/ant-1.6.5.jar:/home/y/tmp/m2-repository/velocity/velocity/1.4/velocity-1.4.jar:/home/y/tmp/m2-repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar:/home/y/tmp/m2-repository/junit/junit/4.8.1/junit-4.8.1.jar:/home/y/tmp/m2-repository/yahoo/yinst/TMReporter/TMReporter/1.0.4/TMReporter-1.0.4.jar:/home/y/tmp/m2-repository/yahoo/yinst/yQATestNG_common_integration_api/yqatestng-common-integration-api/2.1.4/yqatestng-common-integration-api-2.1.4.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_httpclient__commons_httpclient/commons_httpclient__commons_httpclient/3.1_1/commons_httpclient__commons_httpclient-3.1_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_codec__commons_codec/commons_codec__commons_codec/1.2_1/commons_codec__commons_codec-1.2_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_logging__commons_logging/commons_logging__commons_logging/1.1.1_1/commons_logging__commons_logging-1.1.1_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_lang__commons_lang/commons_lang__commons_lang/2.4_1/commons_lang__commons_lang-2.4_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_validator__commons_validator/commons_validator__commons_validator/1.3.0_1/commons_validator__commons_validator-1.3.0_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_beanutils__commons_beanutils/commons_beanutils__commons_beanutils/1.7.0_2/commons_beanutils__commons_beanutils-1.7.0_2.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_digester__commons_digester/commons_digester__commons_digester/1.6_2/commons_digester__commons_digester-1.6_2.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_oro__oro/oro__oro/2.0.8_2/oro__oro-2.0.8_2.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_xml_apis__xml_apis/xml_apis__xml_apis/2.0.2_1/xml_apis__xml_apis-2.0.2_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_collections__commons_collections/commons_collections__commons_collections/2.1_2/commons_collections__commons_collections-2.1_2.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_commons_cli__commons_cli/commons_cli__commons_cli/1.1_1/commons_cli__commons_cli-1.1_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/TestManagerWSApiJar/testmanager-wsapi/1.7.2.9/testmanager-wsapi-1.7.2.9.jar:/home/y/tmp/m2-repository/yahoo/yinst/TestManagerWSClientJar/testmanager-client/1.7.2_2/testmanager-client-1.7.2_2.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_log4j__log4j/log4j__log4j/1.2.14_1/log4j__log4j-1.2.14_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_javax_xml_bind__jaxb_api/javax_xml_bind__jaxb_api/2.1_1/javax_xml_bind__jaxb_api-2.1_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_javax_activation__activation/javax_activation__activation/1.1_2/javax_activation__activation-1.1_2.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_javax_xml_stream__stax_api/javax_xml_stream__stax_api/1.0.2_1/javax_xml_stream__stax_api-1.0.2_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_com_sun_jersey__jersey_client/com_sun_jersey__jersey_client/1.0.2_1/com_sun_jersey__jersey_client-1.0.2_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_com_sun_jersey__jersey_core/com_sun_jersey__jersey_core/1.0.2_1/com_sun_jersey__jersey_core-1.0.2_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_javax_ws_rs__jsr311_api/javax_ws_rs__jsr311_api/1.0_1/javax_ws_rs__jsr311_api-1.0_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/jports_com_sun_jersey__jersey_json/com_sun_jersey__jersey_json/1.0.2_1/com_sun_jersey__jersey_json-1.0.2_1.jar:/home/y/tmp/m2-repository/yahoo/yinst/yjava_ysecure/yjava_ysecure/1.5.14/yjava_ysecure-1.5.14.jar:/home/y/tmp/m2-repository/yahoo/yinst/yjava_ysecure_native/yjava_ysecure_native/1.5.14/yjava_ysecure_native-1.5.14.jar:/home/y/tmp/m2-repository/javax/mail/mail/1.4/mail-1.4.jar:/home/y/tmp/m2-repository/javax/activation/activation/1.1/activation-1.1.jar:"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="env.LS_COLORS" value="rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="env.MAVEN_OPTS" value="-Xmx1024m  -XX:MaxPermSize=128M "/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.ext.dirs" value="/home/y/libexec64/jdk1.7.0/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="user.dir" value="/home/winterya/edward/commonTest"/>
+    <property name="line.separator" value="
+"/>
+    <property name="env.LC_ALL" value="en_US.UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="basedir" value="/home/winterya/edward/commonTest"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="env.MAIL" value="/var/spool/mail/winterya"/>
+    <property name="java.specification.version" value="1.7"/>
+  </properties>
+  <testcase time="1.411" classname="com.yahoo.ect.commontest.MobileWebYQLTest" name="test"/>
+</testsuite>

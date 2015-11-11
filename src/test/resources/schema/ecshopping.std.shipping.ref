@@ -1,0 +1,15 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+        "id": {
+            "type":"string",
+            "enum":["10","20","30"],
+            "required":true
+        },
+        "title": {
+            "type":"string",
+            "required":true
+        }
+    }
+}

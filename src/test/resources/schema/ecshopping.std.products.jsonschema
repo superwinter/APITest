@@ -1,0 +1,54 @@
+{
+    "type":"object",
+        "required":true,
+        "properties":{
+            "query": {
+                "type":"object",
+                "required":true,
+                "properties":{
+                    "count": {
+                        "type":"number",
+                        "required":true
+                    },
+                    "created": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "lang": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "results": {
+                        "type":"object",
+                        "required":true,
+                        "properties":{
+                            "Response": {
+                                "type":"object",
+                                "required":true,
+                                "properties":{
+                                    "Result": {
+                                        "type":"object",
+                                        "required":true,
+                                        "properties":{
+                                            "product": {
+                                                "type":"array",
+                                                "required":true,
+                                                "items": {
+                                                    "$ref":"file:./src/test/resources/schema/ecshopping.std.product.meta.ref"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "Status": {
+                                        "type":"string",
+                                        "required":true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+

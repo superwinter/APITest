@@ -1,0 +1,151 @@
+{
+    "type":"object",
+        "required":true,
+        "properties":{
+            "query": {
+                "type":"object",
+                "required":true,
+                "properties":{
+                    "count": {
+                        "type":"number",
+                        "required":true
+                    },
+                    "created": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "lang": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "results": {
+                        "type":"object",
+                        "required":true,
+                        "properties":{
+                            "Response": {
+                                "type":"object",
+                                "required":true,
+                                "properties":{
+                                    "Result": {
+                                        "type":"object",
+                                        "required":true,
+                                        "properties":{
+                                            "id": {
+                                                "type":"number",
+                                                "required":true 
+                                            }, 
+                                            "product_list": {
+                                                "type":"array",
+                                                "required":true,
+                                                "items":
+                                                {
+                                                    "type":"object",
+                                                    "required":true,
+                                                    "properties":{
+                                                        "cash_price": {
+                                                            "type":"number",
+                                                            "required":true
+                                                        },
+                                                        "has_addon": {
+                                                            "type":"boolean",
+                                                            "required":true
+                                                        },
+                                                        "id": {
+                                                            "type":"number",
+                                                            "required":true 
+                                                        }, 
+                                                        "images": {
+                                                        "type":["array"],
+                                                        "required":true,
+                                                            "items":
+                                                            {
+                                                                "type":"object",
+                                                                "required":false,
+                                                                "properties":{
+                                                                    "img_400": {
+                                                                        "type":"string",
+                                                                        "required":true
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "is_hidden": {
+                                                            "type":"boolean",
+                                                            "required":true
+                                                        },
+                                                        "is_recycled": {
+                                                            "type":"boolean",
+                                                            "required":true
+                                                        },
+                                                        "name": {
+                                                            "type":"string",
+                                                            "required":true
+                                                        },
+                                                        "promotion_text": {
+                                                            "type":"string",
+                                                            "required":false
+                                                        },
+                                                        "rating": {
+                                                            "type":"number",
+                                                            "required":true
+                                                        },
+                                                        "spec_id": {
+                                                            "type":"number",
+                                                            "required":false
+                                                        },
+                                                        "spec_list": {
+                                                            "type":"array",
+                                                            "required":false,
+                                                            "items":
+                                                            {
+                                                                "type":"object",
+                                                                "required":true,
+                                                                "properties":{
+                                                                    "id": {
+                                                                        "type":"number",
+                                                                        "required":true
+                                                                    },
+                                                                    "name": {
+                                                                        "type":"string",
+                                                                        "required":true
+                                                                    },
+                                                                    "purchase_limit": {
+                                                                        "type":"number",
+                                                                        "required":true
+                                                                    }
+                                                                }
+                                                            }
+
+
+                                                        },
+                                                        "suggested_price": {
+                                                            "type":"number",
+                                                            "required":true
+                                                        },
+                                                        "url": {
+                                                            "type":"string",
+                                                            "required":true
+                                                        },
+                                                        "purchase_limit": {
+                                                            "type":"number",
+                                                            "required":true
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    },
+                                    "Status": {
+                                        "type":"string",
+                                        "required":true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+

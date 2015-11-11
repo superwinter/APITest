@@ -1,0 +1,50 @@
+{
+    "type":"object",
+        "required":false,
+        "properties":{
+            "query": {
+                "type":"object",
+                "required":false,
+                "properties":{
+                    "count": {
+                        "type":"number",
+                        "required":false
+                    },
+                    "created": {
+                        "type":"string",
+                        "required":false
+                    },
+                    "lang": {
+                        "type":"string",
+                        "required":false
+                    },
+                    "results": {
+                        "type":"object",
+                        "required":true,
+                        "properties":{
+                            "Response": {
+                                "type":"object",
+                                "required":true,
+                                "properties":{
+                                    "Result": {
+                                        "type":"object",
+                                        "required":true,
+                                        "properties":{
+                                            "promotion": {
+                                                "$ref":"file:./src/test/resources/schema/ecshopping.promotion.promotion.ref"
+                                            }
+                                        }
+                                    },
+                                    "Status": {
+                                        "type":"string",
+                                        "required":true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+

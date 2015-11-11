@@ -1,0 +1,34 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="2252" started-at="2015-11-11T19:25:53Z" finished-at="2015-11-11T19:25:56Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="2252" started-at="2015-11-11T19:25:53Z" finished-at="2015-11-11T19:25:56Z">
+      <class name="com.yahoo.ect.commontest.MobileWebYQLTest">
+        <test-method status="PASS" signature="CommonTestBeforeMethod()" name="CommonTestBeforeMethod" is-config="true" duration-ms="2" started-at="2015-11-11T19:25:54Z" finished-at="2015-11-11T19:25:54Z">
+        </test-method>
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)" name="test" duration-ms="1410" started-at="2015-11-11T19:25:54Z" finished-at="2015-11-11T19:25:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tcid=1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testcase/getResponseBody.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="wSTestBeforeMethod()" name="wSTestBeforeMethod" is-config="true" duration-ms="0" started-at="2015-11-11T19:25:54Z" finished-at="2015-11-11T19:25:54Z">
+        </test-method>
+        <test-method status="PASS" signature="CommonTestAfterMethod()" name="CommonTestAfterMethod" is-config="true" duration-ms="0" started-at="2015-11-11T19:25:55Z" finished-at="2015-11-11T19:25:55Z">
+        </test-method>
+        <test-method status="PASS" signature="wSTestAfterMethod()" name="wSTestAfterMethod" is-config="true" duration-ms="0" started-at="2015-11-11T19:25:55Z" finished-at="2015-11-11T19:25:55Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

@@ -1,0 +1,30 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+        "description": {
+            "type":"string",
+            "required":true
+        },
+        "end_date": {
+            "type":"number",
+            "required":true
+        },
+        "id": {
+            "type":"number",
+            "required":true
+        },
+        "name": {
+            "type":"string",
+            "required":true
+        },
+        "start_date": {
+            "type":"number",
+            "required":true
+        },
+        "url": {
+            "type":"string",
+            "required":true
+        }
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+            "image": {
+                "type":"array",
+                "required":true,
+                "items":{
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "image": {
+                            "type":"array",
+                            "required":true,
+                            "items":{
+                                "$ref":"file:./src/test/resources/schema/ecshopping.std.image.ref"
+                            }
+                        }
+                    }
+                }
+            },
+            "description": {
+                "type":["string","null"],
+                "required":true
+            },
+            "endTime": {
+                "type":"number",
+                "required":false
+            },
+            "id": {
+                "type":"string",
+                "required":true
+            },
+            "title": {
+                "type":"string",
+                "required":true
+            },
+            "url": {
+                "type":"string",
+                "required":true
+            },
+            "startTime": {
+                "type":"number",
+                "required":false
+            },
+            "removalTime": {
+                "type":"number",
+                "required":false
+            },
+            "currentPrice": {
+                "type":"number",
+                "required":true
+            },
+            "marketPrice": {
+                "type":"number",
+                "required":false
+            },
+            "rating": {
+                "type":"number",
+                "required":true
+            },
+            "shortDesc": {
+                "type":["string","null"],
+                "required":true
+            },
+            "isAvailable": {
+                "type":"boolean",
+                "required":true
+            },
+            "purchaseLimit": {
+                "type":"number",
+                "required":true
+            },
+            "extra":{
+                "type":"object",
+                "required":false,
+                "properties":{
+                    "spec": {
+                       "$ref":"file:./src/test/resources/schema/ecshopping.std.spec.ref"
+                    },
+                    "giftList": {
+                        "type":"object",
+                        "required":false,
+                        "properties":{
+                            "$ref":"file:./src/test/resources/schema/ecshopping.std.subProdList.ref"
+                         }
+                    },
+                    "selectedGiftList": {
+                        "type":"object",
+                        "required":false,
+                        "properties":{
+                            "$ref":"file:./src/test/resources/schema/ecshopping.std.subProdList.ref"
+                         }
+                    },
+                    "addonList": {
+                        "type":"object",
+                        "required":false,
+                        "properties":{
+                            "$ref":"file:./src/test/resources/schema/ecshopping.std.subProdList.ref"
+                         }
+                    }
+                }
+            }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "type":"object",
+        "required":true,
+        "properties":{
+            "query": {
+                "type":"object",
+                "required":true,
+                "properties":{
+                    "count": {
+                        "type":"number",
+                        "required":true
+                    },
+                    "created": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "lang": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "results": {
+                        "type":"object",
+                        "required":true,
+                        "properties":{
+                            "Response": {
+                                "type":"object",
+                                "required":true,
+                                "properties":{
+                                    "Result": {
+                                        "$ref":"file:./src/test/resources/schema/ecsearch.search.list.ref"
+                                    },
+                                    "Status": {
+                                        "type":"string",
+                                        "required":true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

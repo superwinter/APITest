@@ -1,0 +1,42 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+            "image": {
+                "type":"array",
+                "required":true,
+                "items": {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "image": {
+                            "type":"array",
+                            "required":true,
+                            "items":
+                            {
+                                "$ref":"file:./src/test/resources/schema/ecshopping.std.image.ref"   
+
+                            }
+                        }
+                    }
+                }
+            },
+            "title": {
+                "type":"string",
+                "required":true
+            },
+            "shortDesc": {
+                "type":["string","null"],
+                "required":true
+            },
+            "dealType": {
+                "type":"string",
+                "enum":["mobile","gd"],
+                "required":true
+            },
+            "extra":{
+                "type":"object",
+                "required":false
+            }
+    }
+}

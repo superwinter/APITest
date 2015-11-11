@@ -1,0 +1,66 @@
+{
+    "type":"object",
+        "required":true,
+        "properties":{
+            "available_delivery_type": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"number",
+                    "enum":[10,20,30],
+                    "required":true
+                }
+            },
+            "banner_image": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "img_950": {
+                            "type":"string",
+                            "required":true
+                        },
+                        "img_620": {
+                            "type":"string",
+                            "required":false
+                        }
+                    }
+                }
+            },
+            "description": {
+                "type":["string","null"],
+                "required":true
+            },
+            "end_date": {
+                "type":"number",
+                "required":true
+            },
+            "id": {
+                "type":"number",
+                "required":true
+            },
+            "name": {
+                "type":"string",
+                "required":true
+            },
+            "rule": {
+                "type":"object",
+                "required":true,
+                "properties":{
+                   "/": {"$ref":"file:./src/test/resources/schema/ecshopping.promotion.rule.ref" }
+                }
+            },
+            "start_date": {
+                "type":"number",
+                "required":true
+            },
+            "subtitle": {
+                "type":["string","null"],
+                "required":true
+            }
+    }
+}

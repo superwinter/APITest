@@ -1,0 +1,16 @@
+{
+"type":"object",
+"properties":{
+    "title":{
+        "type":"string",
+        "required":true
+     },
+     "subProduct":{
+        "type":"array",
+        "required":false,
+        "items": {
+            "$ref":"file:./src/test/resources/schema/ecshopping.std.subProd.ref"
+        }
+     }
+ }
+}

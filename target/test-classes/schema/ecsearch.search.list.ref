@@ -1,0 +1,46 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+        "total-hit-count": {
+            "type":"string",
+            "required":true
+        },
+        "hit": {
+            "type":"array",
+            "required":true,
+            "items":{
+                "type":"object",
+                "required":true,
+                "properties":{
+                    "relevancy": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "source": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "field": {
+                        "type":"array",
+                        "required":true,
+                        "items":{
+                            "type":"object",
+                            "required":true,
+                            "properties":{
+                                "name": {
+                                    "type":"string",
+                                    "required":true
+                                },
+                                "content": {
+                                    "type":"string",
+                                    "required":false
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

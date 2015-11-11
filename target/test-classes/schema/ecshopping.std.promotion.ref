@@ -1,0 +1,64 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+            "shipping": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "$ref":"file:./src/test/resources/schema/ecshopping.std.shipping.ref"
+                }
+            },
+            "image": {
+                "type":"array",
+                "required":true,
+                "items": {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "image": {
+                            "type":"array",
+                            "required":true,
+                            "items":
+                            {
+                                "$ref":"file:./src/test/resources/schema/ecshopping.std.image.ref"   
+
+                            }
+                        }
+                    }
+                }
+            },
+            "description": {
+                "type":["string","null"],
+                "required":true
+            },
+            "endTime": {
+                "type":"number",
+                "required":true
+            },
+            "id": {
+                "type":"string",
+                "required":true
+            },
+            "title": {
+                "type":"string",
+                "required":true
+            },
+            "rule": {
+                 "$ref":"file:./src/test/resources/schema/ecshopping.std.promotion.rule.ref" 
+            },
+            "startTime": {
+                "type":"number",
+                "required":true
+            },
+            "shortDesc": {
+                "type":["string","null"],
+                "required":true
+            },
+            "extra":{
+                "type":"object",
+                "required":false
+            }
+    }
+}

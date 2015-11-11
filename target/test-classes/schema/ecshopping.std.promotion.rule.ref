@@ -1,0 +1,35 @@
+{            
+    "type":"object",
+    "required":true,
+    "properties":{
+        "minQuantity": {
+            "type":"number",
+            "required":false
+        },
+        "percentageOff": {
+            "type":"number",
+            "required":false
+        },
+        "priceOff": {
+            "type":"number",
+            "required":false
+        },
+        "minPrice": {
+            "type":"number",
+            "required":false
+        },
+        "fixedPrice": {
+            "type":"number",
+            "required":false
+        },
+        "id": {
+            "type":"string",
+            "enum":["0","1","2","3","4","5","6"],
+            "required":true
+        },
+        "title": {
+            "type":"string",
+            "required":true
+        }
+    }
+}

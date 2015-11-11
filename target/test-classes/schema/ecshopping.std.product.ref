@@ -1,0 +1,125 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+            "payment": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "id": {
+                            "type":"string",
+                            "enum":["1","2","3","4","5","6","7","8","9","99"],
+                            "required":true
+                        },
+                        "title": {
+                            "type":"string",
+                            "required":true
+                        }
+                    }
+                }
+            },
+            "image": {
+                "type":"array",
+                "required":true,
+                "items":{
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "image": {
+                            "type":"array",
+                            "required":true,
+                            "items":{
+                                "$ref":"file:./src/test/resources/schema/ecshopping.std.image.ref"
+                            }
+                        }
+                    }
+                }
+            },
+            "description": {
+                "type":["string","null"],
+                "required":true
+            },
+            "endTime": {
+                "type":"number",
+                "required":true
+            },
+            "id": {
+                "type":"string",
+                "required":true
+            },
+            "title": {
+                "type":"string",
+                "required":true
+            },
+            "url": {
+                "type":"string",
+                "required":true
+            },
+            "startTime": {
+                "type":"number",
+                "required":true
+            },
+            "removalTime": {
+                "type":"number",
+                "required":true
+            },
+            "currentPrice": {
+                "type":"number",
+                "required":true
+            },
+            "marketPrice": {
+                "type":"number",
+                "required":false
+            },
+            "rating": {
+                "type":"number",
+                "required":true
+            },
+            "shortDesc": {
+                "type":["string","null"],
+                "required":true
+            },
+            "isAvailable": {
+                "type":"boolean",
+                "required":true
+            },
+            "purchaseLimit": {
+                "type":"number",
+                "required":true
+            },
+            "extra":{
+                "type":"object",
+                "required":false,
+                "properties":{
+                    "spec": {
+                       "$ref":"file:./src/test/resources/schema/ecshopping.std.spec.ref"
+                    },
+                    "giftList": {
+                        "type":"object",
+                        "required":false,
+                        "properties":{
+                            "$ref":"file:./src/test/resources/schema/ecshopping.std.subProdList.ref"
+                         }
+                    },
+                    "selectedGiftList": {
+                        "type":"object",
+                        "required":false,
+                        "properties":{
+                            "$ref":"file:./src/test/resources/schema/ecshopping.std.subProdList.ref"
+                         }
+                    },
+                    "addonList": {
+                        "type":"object",
+                        "required":false,
+                        "properties":{
+                            "$ref":"file:./src/test/resources/schema/ecshopping.std.subProdList.ref"
+                         }
+                    }
+                }
+            }
+    }
+}

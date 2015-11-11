@@ -1,0 +1,29 @@
+{
+    "type":"object",
+        "required":false,
+        "properties":{
+            "category": {
+                "type":"array",
+                "required":false,
+                "items": {
+                    "$ref":"file:./src/test/resources/schema/ecshopping.std.category.ref"
+                }
+            },
+            "id": {
+                "type":"string",
+                "required":true
+            },
+            "level": {
+                "type":"number",
+                "required":true
+            },
+            "title": {
+                "type":"string",
+                "required":true
+            },
+            "total": {
+                "type":"number",
+                "required":true
+            }
+    }
+}

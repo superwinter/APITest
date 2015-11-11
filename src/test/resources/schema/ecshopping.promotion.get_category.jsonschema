@@ -1,0 +1,98 @@
+{
+    "type":"object",
+        "required":true,
+        "properties":{
+            "query": {
+                "type":"object",
+                "required":true,
+                "properties":{
+                    "count": {
+                        "type":"number",
+                        "required":true
+                    },
+                    "created": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "lang": {
+                        "type":"string",
+                        "required":true
+                    },
+                    "results": {
+                        "type":"object",
+                        "required":true,
+                        "properties":{
+                            "Response": {
+                                "type":"object",
+                                "required":true,
+                                "properties":{
+                                    "Status": {
+                                        "type":"string",
+                                        "required":true
+                                    },
+                                    "Result": {
+                                        "type":"object",
+                                        "required":true,
+                                        "properties":{
+                                            "category" :{
+                                                "type":"object",
+                                                "required":true,
+                                                "properties":{
+                                                    "cat_lv": {
+                                                        "type":"number",
+                                                        "required":true
+                                                    },
+                                                    "category_list": {
+                                                        "type":"array",
+                                                        "required":true,
+                                                        "items":
+                                                        {
+                                                            "type":"object",
+                                                            "required":true,
+                                                            "properties":{
+                                                                "cat_lv": {
+                                                                    "type":"number",
+                                                                    "required":true
+                                                                },
+                                                                "count": {
+                                                                    "type":"number",
+                                                                    "required":true
+                                                                },
+                                                                "id": {
+                                                                    "type":"number",
+                                                                    "required":true
+                                                                },
+                                                                "name": {
+                                                                    "type":"string",
+                                                                    "required":true
+                                                                }
+                                                            }
+                                                        }
+
+
+                                                    },
+                                                    "count": {
+                                                        "type":"number",
+                                                        "required":true
+                                                    },
+                                                    "id": {
+                                                        "type":"number",
+                                                        "required":true
+                                                    },
+                                                    "name": {
+                                                        "type":"string",
+                                                        "required":true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+

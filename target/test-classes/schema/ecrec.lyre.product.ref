@@ -1,0 +1,116 @@
+{
+    "type":"object",
+    "required":true,
+    "properties":{
+        "desc": {
+            "type":"string",
+            "required":true
+        },
+        "extension": {
+            "type":"object",
+            "required":false,
+            "properties":{
+                "adult": {
+                    "type":"boolean",
+                    "required":true
+                },
+                "producttype": {
+                    "type":"string",
+                    "required":false
+                },
+                "sub": {
+                    "type":"string",
+                    "required":false
+                },
+                "zone": {
+                    "type":"string",
+                    "required":false
+                }
+            }
+        },
+        "id": {
+            "type":"string",
+            "required":true
+        },
+        "imageLinksInfo": {
+            "type":"object",
+            "required":false,
+            "properties":{
+                "large": {
+                    "type":"object",
+                    "required":false,
+                    "properties":{
+                        "height": {
+                            "type":"number",
+                            "required":false
+                        },
+                        "url": {
+                            "type":"string",
+                            "required":false
+                        },
+                        "width": {
+                            "type":"number",
+                            "required":false
+                        }
+                    }
+                },
+                "medium": {
+                    "type":"object",
+                    "required":false,
+                    "properties":{
+                        "height": {
+                            "type":"number",
+                            "required":false
+                        },
+                        "url": {
+                            "type":"string",
+                            "required":false
+                        },
+                        "width": {
+                            "type":"number",
+                            "required":false
+                        }
+                    }
+                },
+                "small": {
+                    "type":"object",
+                    "required":false,
+                    "properties":{
+                        "height": {
+                            "type":"number",
+                            "required":false
+                        },
+                        "url": {
+                            "type":"string",
+                            "required":false
+                        },
+                        "width": {
+                            "type":"number",
+                            "required":false
+                        }
+                    }
+                }
+            }
+        },
+        "link": {
+            "type":"string",
+            "required":true
+        },
+        "priceTag": {
+            "type":"string",
+            "required":true
+        },
+        "property": {
+            "type":"string",
+            "required":false
+        },
+        "soldout": {
+            "type":"boolean",
+            "required":true
+        },
+        "title": {
+            "type":"string",
+            "required":true
+        }
+    }
+}

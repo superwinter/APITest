@@ -1,0 +1,254 @@
+{
+    "type":"object",
+        "required":true,
+        "properties":{
+            "addon_list": {
+                "type":"array",
+                "required":false,
+                "items":
+                {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "items": {
+                            "type":"array",
+                            "required":true,
+                            "items":
+                            {
+                                "$ref":"file:./src/test/resources/schema/ecshopping.product.subproduct.ref"
+                            }
+                        },
+                        "selected_max": {
+                            "type":"number",
+                            "required":true
+                        },
+                        "selected_min": {
+                            "type":"number",
+                            "required":true
+                        }
+                    }
+                }
+
+
+            },
+            "available_delivery_type": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"number",
+                    "enum":[10,20,30],
+                    "required":true
+                }
+            },
+            "cash_price": {
+                "type":"number",
+                "required":true
+            },
+            "catitem_id": {
+                "type":"number",
+                "required":true
+            },
+            "description": {
+                "type":"string",
+                "required":false
+            },
+            "end_date": {
+                "type":"number",
+                "required":true
+            },
+            "gift_list": {
+                "type":"array",
+                "required":false,
+                "items":
+                {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "items": {
+                            "type":"array",
+                            "required":true,
+                            "items":
+                            {
+                                "$ref":"file:./src/test/resources/schema/ecshopping.product.subproduct.ref"
+                            }
+                        },
+                        "selected_max": {
+                            "type":"number",
+                            "required":true
+                        },
+                        "selected_min": {
+                            "type":"number",
+                            "required":true
+                        }
+                    }
+                }
+
+
+            },
+            "id": {
+                "type":"number",
+                "required":true
+            },
+            "images": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "img_1000": {
+                            "type":"string",
+                            "required":true
+                        },
+                        "img_80": {
+                            "type":"string",
+                            "required":true
+                        },
+                        "img_400": {
+                            "type":"string",
+                            "required":true
+                        }
+                    }
+                }
+
+
+            },
+            "is_hidden": {
+                "type":"boolean",
+                "required":true
+            },
+            "is_installation_required": {
+                "type":"boolean",
+                "required":true
+            },
+            "is_recycled": {
+                "type":"boolean",
+                "required":true
+            },
+            "name": {
+                "type":"string",
+                "required":true
+            },
+            "order_type": {
+                "type":"number",
+                "required":true
+            },
+            "available_payment_location": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"number",
+                    "required":true
+                }
+
+
+            },
+            "available_payment_type": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"number",
+                    "required":true
+                }
+
+
+            },
+            "available_pickup_location": {
+                "type":"array",
+                "required":true,
+                "items":
+                {
+                    "type":"number",
+                    "required":true
+                }
+
+
+            },
+            "promo_type": {
+                "type":"number",
+                "required":true
+            },
+            "promotion_text": {
+                "type":"string",
+                "required":false
+            },
+            "purchase_limit": {
+                "type":"number",
+                "required":true
+            },
+            "rating": {
+                "type":"number",
+                "required":true
+            },
+            "redmfdbckrate": {
+                "type":"number",
+                "required":true
+            },
+            "remove_date": {
+                "type":"number",
+                "required":true
+            },
+            "selected_gift_list": {
+                "type":"array",
+                "required":false,
+                "items":
+                {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                        "items": {
+                            "type":"array",
+                            "required":true,
+                            "items":
+                            {
+                                "$ref":"file:./src/test/resources/schema/ecshopping.product.subproduct.ref"
+                            }
+                        },
+                        "selected_max": {
+                            "type":"number",
+                            "required":true
+                        },
+                        "selected_min": {
+                            "type":"number",
+                            "required":true
+                        }
+                    }
+                }
+
+            },
+            "spec_list": {
+                "type":"array",
+                "required":false,
+                "items":
+                {
+                    "$ref":"file:./src/test/resources/schema/ecshopping.product.subproduct.ref"
+                }
+            },
+            "start_date": {
+                "type":"number",
+                "required":true
+            },
+            "status": {
+                "type":"number",
+                "required":true
+            },
+            "suggested_price": {
+                "type":"number",
+                "required":true
+            },
+            "type": {
+                "type":"number",
+                "required":true
+            },
+            "url": {
+                "type":"string",
+                "required":true
+            }
+
+        }
+}
+
